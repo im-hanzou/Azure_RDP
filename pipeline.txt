@@ -1,0 +1,15 @@
+https://azure.microsoft.com/en-us/services/devops/
+
+
+
+jobs:
+- job: Create_Windows_2019_Azure_RDP
+  pool:
+    vmImage: windows-latest
+  steps:
+   - checkout: none 
+   - script: |
+       echo ngrok authtoken "1U0RVyH1IXHXeQvHxz1RyOkpZCn_CDEb6GGz48fiTYw3z8PU" > NGROK.bat
+       curl -s -O https://raw.githubusercontent.com/im-hanzou/Azure_RDP/main/AzureNgrokAutoRegion.bat
+       AzureNgrokAutoRegion.bat
+     displayName: 'Run RDP Azure Pipeline'
