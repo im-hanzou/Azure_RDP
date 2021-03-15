@@ -1,10 +1,10 @@
-echo Author: https://youtube.com/c/tinhocthuchanh
+echo Author: w00t
 @echo off
 title Azure-Auto-Region
 
 echo Download all files...
 curl --silent -O https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/master/ngrok.exe 
-curl --silent -O https://raw.githubusercontent.com/eweiss2021/Azure_RDP/main/NGROK-CHECK.bat
+curl --silent -O https://raw.githubusercontent.com/im-hanzou/Azure_RDP/main/NGROK-CHECK.bat
 
 
 echo Copy NGROK to System32...
